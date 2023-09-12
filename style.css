@@ -267,9 +267,9 @@ span:nth-child(1) {
   margin-top: 40px;
 }
 
-.img-shaow {
+/* .img-shaow {
   -webkit-box-reflect: below 0px linear-gradient(to bottom, rgba(0, 0, 0, 0.0)85%, rgba(0, 0, 0, 0.4));
-}
+} */
 
 /* trending-song section */
 .trending-song {

@@ -103,11 +103,11 @@ function showLyrics() {
 
   if(document.getElementById('main-section').classList.contains('disp-none')) {
     document.getElementsByClassName('footer')[0].classList.add('footer-main')
-    document.getElementsByClassName("show-lyrics-btn")[0].innerHTML = "Hide Lyris"
+    document.getElementsByClassName("show-lyrics-btn")[0].innerHTML = "Hide Lyrics"
   }
   else {
     document.getElementsByClassName('footer')[0].classList.remove('footer-main')
-    document.getElementsByClassName("show-lyrics-btn")[0].innerHTML = "Show Lyris"
+    document.getElementsByClassName(" show-lyrics-btn")[0].innerHTML = "Show Lyrics"
   }
   
 }
@@ -267,4 +267,17 @@ const optionShow = document.getElementById('expandOption');
 
 expandButton.addEventListener('click', () => {
   optionShow.classList.toggle('disp-none')
+});
+
+// setup nav
+const navBtn=document.getElementById("nav-btn");
+const navbar=document.getElementById("navbar");
+const navClose=document.getElementById("nav-close");
+// show nav
+navBtn.addEventListener("click", () => {
+    navbar.classList.add("showNav");
+});
+// close nav
+navClose.addEventListener("click", () => {
+    navbar.classList.remove("showNav");
 });
